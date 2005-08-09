@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# $Id: 02_pyx_utils.t,v 1.2 2005-08-09 08:56:18 skim Exp $
+# $Id: 01_pyx_utils.t,v 1.1 2005-08-09 08:56:38 skim Exp $
 
 # Pragmas.
 use strict;
