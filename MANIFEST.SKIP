@@ -1,0 +1,4 @@
+\bCVS\b
+^Makefile$
+\.bak$
+\.old$
