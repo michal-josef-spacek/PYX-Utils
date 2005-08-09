@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 package PYX::Utils;
 #------------------------------------------------------------------------------
-# $Id: Utils.pm,v 1.1 2005-08-09 06:44:45 skim Exp $
+# $Id: Utils.pm,v 1.2 2005-08-09 06:49:39 skim Exp $
 
 # Pragmas.
 use strict;
@@ -10,7 +10,7 @@ use strict;
 use Exporter;
 
 # Version.
-our $VERSION = 0.1;
+our $VERSION = 0.01;
 
 # Global variables.
 use vars qw(%entities $entities @ISA @EXPORT_OK);

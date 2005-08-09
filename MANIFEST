@@ -1,4 +1,9 @@
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
+t/02_pyx_utils.t
+t/PYXUtils/01_version.t
+t/PYXUtils/02_encode.t
+t/PYXUtils/03_decode.t
+t/PYXUtils/04_entity_encode.t
 Utils.pm
