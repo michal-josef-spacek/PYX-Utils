@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# $Id: 01_pyx_utils.t,v 1.1 2005-08-09 08:56:38 skim Exp $
+# $Id: 01_pyx_utils.t,v 1.2 2005-08-10 15:47:19 skim Exp $
 
 # Pragmas.
 use strict;
@@ -10,14 +10,14 @@ use PYX::Utils;
 use Test;
 
 # Global variables.
-use vars qw/$debug $obj $class $dir/;
+use vars qw/$debug $class $dir/;
 
 BEGIN {
 	# Name of class.
 	$dir = $class = 'PYX::Utils';
 	$dir =~ s/:://g;
 
-        my $tests = `grep -r \"^ok(\" t/$dir/*.t | wc -l`;
+	my $tests = `egrep -r \"^[[:space:]]*ok\\(\" t/$dir/*.t | wc -l`;
         chomp $tests;
         plan('tests' => $tests);
 
