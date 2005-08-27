@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 package PYX::Utils;
 #------------------------------------------------------------------------------
-# $Id: Utils.pm,v 1.2 2005-08-09 06:49:39 skim Exp $
+# $Id: Utils.pm,v 1.3 2005-08-27 12:35:52 skim Exp $
 
 # Pragmas.
 use strict;
@@ -12,22 +12,19 @@ use Exporter;
 # Version.
 our $VERSION = 0.01;
 
-# Global variables.
-use vars qw(%entities $entities @ISA @EXPORT_OK);
-
 # Inheritance.
-@ISA = ('Exporter');
+our @ISA = ('Exporter');
 
 # Export.
-@EXPORT_OK = ('decode', 'encode', 'entity_encode');
+our @EXPORT_OK = ('decode', 'encode', 'entity_encode');
 
 # Encoding table.
-%entities = (
+our %entities = (
         '<' => '&lt;',
         '&' => '&amp;',
         '"' => '&quot;',
 );
-$entities = join('', keys(%entities));
+our $entities = join('', keys(%entities));
 
 #------------------------------------------------------------------------------
 sub decode {
