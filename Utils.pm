@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 package PYX::Utils;
 #------------------------------------------------------------------------------
-# $Id: Utils.pm,v 1.3 2005-08-27 12:35:52 skim Exp $
+# $Id: Utils.pm,v 1.4 2007-04-09 03:22:29 skim Exp $
 
 # Pragmas.
 use strict;
@@ -57,3 +57,53 @@ sub entity_encode {
 }
 
 1;
+
+=pod
+
+=head1 NAME
+
+PYX::Utils - TODO
+
+=head1 SYNOPSIS
+
+TODO
+
+=head1 DESCRIPTION
+
+TODO
+
+=head1 SUBROUTINES
+
+=over 8
+
+=item B<decode()>
+
+TODO
+
+=item B<encode()>
+
+TODO
+
+=item B<entity_encode()>
+
+TODO
+
+=back
+
+=head1 EXAMPLE
+
+TODO
+
+=head1 REQUIREMENTS
+
+L<Exporter>
+
+=head1 AUTHOR
+
+Michal Spacek L<tupinek@gmail.com>
+
+=head1 VERSION
+
+0.01
+
+=cut
