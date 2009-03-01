@@ -9,4 +9,7 @@ WriteMakefile(
 		'Exporter' => 0,
 	},
 	'VERSION_FROM' => 'Utils.pm',
+	'test' => {
+		'TESTS' => 't/PYX::Utils/*.t',
+	},
 );
