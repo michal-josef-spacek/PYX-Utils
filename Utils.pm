@@ -3,28 +3,24 @@ package PYX::Utils;
 #------------------------------------------------------------------------------
 
 # Pragmas.
+use base qw(Exporter);
 use strict;
 use warnings;
 
 # Modules.
-use Exporter;
+use Readonly;
+
+# Constants.
+Readonly::Array our @EXPORT_OK => qw(decode encode entity_encode);
+Readonly::Hash our %ENTITIES => (
+        '<' => '&lt;',
+        q{&} => '&amp;',
+        q{"} => '&quot;',
+);
+Readonly::Scalar our $ENTITIES => join q{}, keys %ENTITIES;
 
 # Version.
 our $VERSION = 0.01;
-
-# Inheritance.
-our @ISA = ('Exporter');
-
-# Export.
-our @EXPORT_OK = ('decode', 'encode', 'entity_encode');
-
-# Encoding table.
-our %entities = (
-        '<' => '&lt;',
-        '&' => '&amp;',
-        '"' => '&quot;',
-);
-our $entities = join('', keys(%entities));
 
 #------------------------------------------------------------------------------
 sub decode {
@@ -32,7 +28,7 @@ sub decode {
 # Decode chars.
 
 	my $text = shift;
-	$text =~ s/\n/\\n/g;
+	$text =~ s/\n/\\n/gms;
 	return $text;
 }
 
@@ -42,7 +38,7 @@ sub encode {
 # Encode chars.
 
 	my $text = shift;
-	$text =~ s/\\n/\n/g;
+	$text =~ s/\\n/\n/gms;
 	return $text;
 }
 
@@ -52,13 +48,17 @@ sub entity_encode {
 # Encode some chars for html.
 
 	my $text = shift;
-	$text =~ s/([$entities])/$entities{$1}/g;	
+	$text =~ s/([$ENTITIES])/$ENTITIES{$1}/gms;
 	return $text;
 }
 
 1;
 
+__END__
+
 =pod
+
+=encoding utf8
 
 =head1 NAME
 
@@ -94,13 +94,17 @@ TODO
 
 TODO
 
-=head1 REQUIREMENTS
+=head1 DEPENDENCIES
 
-L<Exporter>
+L<Readonly(3pm)>.
 
 =head1 AUTHOR
 
-Michal Spacek L<tupinek@gmail.com>
+Michal Špaček L<tupinek@gmail.com>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
 
 =head1 VERSION
 
