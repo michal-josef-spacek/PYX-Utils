@@ -8,10 +8,11 @@ use strict;
 use warnings;
 
 # Modules.
+use Error::Simple::Multiple qw(err);
 use Readonly;
 
 # Constants.
-Readonly::Array our @EXPORT_OK => qw(decode encode entity_encode);
+Readonly::Array our @EXPORT_OK => qw(decode encode entity_encode set_params);
 Readonly::Hash our %ENTITIES => (
         '<' => '&lt;',
         q{&} => '&amp;',
@@ -52,6 +53,23 @@ sub entity_encode {
 	return $text;
 }
 
+#------------------------------------------------------------------------------
+sub set_params {
+#------------------------------------------------------------------------------
+# Set parameters to user values.
+
+	my ($self, @params) = @_;
+	while (@params) {
+		my $key = shift @params;
+		my $val = shift @params;
+		if (! exists $self->{$key}) {
+			err "Unknown parameter '$key'.";
+		}
+		$self->{$key} = $val;
+	}
+	return;
+}
+
 1;
 
 __END__
@@ -88,7 +106,19 @@ TODO
 
 TODO
 
+=item B<set_params($self, @params)>
+
+ Sets object parameters to user values.
+ If setted key doesn't exist in $self object, turn fatal error.
+ $self - Object or hash reference.
+ @params - Key, value pairs.
+
 =back
+
+=head1 ERRORS
+
+ set_params():
+   Unknown parameter '%s'.
 
 =head1 EXAMPLE
 
@@ -96,7 +126,12 @@ TODO
 
 =head1 DEPENDENCIES
 
+L<Error::Simple::Multiple(3pm)>,
 L<Readonly(3pm)>.
+
+=head1 SEE ALSO
+
+ TODO
 
 =head1 AUTHOR
 
