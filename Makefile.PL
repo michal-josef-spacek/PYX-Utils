@@ -7,6 +7,7 @@ WriteMakefile(
 	'NAME' => 'PYX::Utils',
 	'PREREQ_PM' => {
 		'Exporter' => 0,
+		'File::Object' => 0,
 	},
 	'VERSION_FROM' => 'Utils.pm',
 	'test' => {
