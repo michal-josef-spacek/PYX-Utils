@@ -10,7 +10,7 @@ use Error::Simple::Multiple qw(err);
 use Readonly;
 
 # Constants.
-Readonly::Array our @EXPORT_OK => qw(decode encode entity_encode set_params);
+Readonly::Array our @EXPORT_OK => qw(decode encode entity_encode);
 Readonly::Hash our %ENTITIES => (
         '<' => '&lt;',
         q{&} => '&amp;',
@@ -40,20 +40,6 @@ sub entity_encode {
 	my $text = shift;
 	$text =~ s/([$ENTITIES])/$ENTITIES{$1}/gms;
 	return $text;
-}
-
-# Set parameters to user values.
-sub set_params {
-	my ($self, @params) = @_;
-	while (@params) {
-		my $key = shift @params;
-		my $val = shift @params;
-		if (! exists $self->{$key}) {
-			err "Unknown parameter '$key'.";
-		}
-		$self->{$key} = $val;
-	}
-	return;
 }
 
 1;
@@ -92,19 +78,11 @@ TODO
 
 TODO
 
-=item B<set_params($self, @params)>
-
- Sets object parameters to user values.
- If setted key doesn't exist in $self object, turn fatal error.
- $self - Object or hash reference.
- @params - Key, value pairs.
-
 =back
 
 =head1 ERRORS
 
- set_params():
-   Unknown parameter '%s'.
+ None.
 
 =head1 EXAMPLE
 

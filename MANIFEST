@@ -7,5 +7,4 @@ t/PYX::Utils/03-pod.t
 t/PYX::Utils/04-encode.t
 t/PYX::Utils/05-decode.t
 t/PYX::Utils/06-entity_encode.t
-t/PYX::Utils/07-set_params.t
 Utils.pm
