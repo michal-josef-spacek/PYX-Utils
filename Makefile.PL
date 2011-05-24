@@ -7,7 +7,7 @@ use ExtUtils::MakeMaker;
 
 # Definition.
 WriteMakefile(
-	'AUTHOR' => 'Michal Spacek',
+	'AUTHOR' => 'Michal Špaček <skim@cpan.org>',
 	'NAME' => 'PYX::Utils',
 	'PREREQ_PM' => {
 		'Exporter' => 0,
