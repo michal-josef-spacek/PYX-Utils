@@ -2,7 +2,6 @@
 use PYX::Utils qw(entity_encode);
 use Test::More 'tests' => 4;
 
-print "Testing: entity_encode function.\n";
 my $str = 'a<b';
 my $out_str = entity_encode($str);
 is($out_str, "a&lt;b");
