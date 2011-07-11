@@ -18,6 +18,7 @@ WriteMakefile(
 	'CONFIGURE_REQUIRES' => {
 		'ExtUtils::MakeMaker' => 0,
 	},
+	'LICENSE' => 'bsd',
 	'NAME' => 'PYX::Utils',
 	'PREREQ_PM' => {
 		'Exporter' => 0,
