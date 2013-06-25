@@ -3,7 +3,10 @@ TODO
 1. Tohle by mela byt nejaka obecna knihovna. Pouzitelna i pro SGML::ESIS 
    i pro Tags::PYX a PYX/.
 2. Dodelat dokumentaci.
-3.
+3. Predelat Makefile.PL na Module::Install.
+4. SIGNATURE
+5. examples/ adresar.
+6.
 
 Applied
 =======
