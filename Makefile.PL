@@ -26,6 +26,6 @@ WriteMakefile(
 	},
 	'VERSION_FROM' => 'Utils.pm',
 	'test' => {
-		'TESTS' => 't/PYX::Utils/*.t',
+		'TESTS' => 't/PYX-Utils/*.t',
 	},
 );
