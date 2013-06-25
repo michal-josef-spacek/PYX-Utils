@@ -1,4 +1,5 @@
 Changes
+LICENSE
 Makefile.PL
 MANIFEST			This list of files
 t/PYX-Utils/00-use.t
