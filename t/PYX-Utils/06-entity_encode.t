@@ -4,7 +4,8 @@ use warnings;
 
 # Modules.
 use PYX::Utils qw(entity_encode);
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 5;
+use Test::NoWarnings;
 
 # Test.
 my $str = 'a<b';
