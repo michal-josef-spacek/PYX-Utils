@@ -89,7 +89,7 @@ TODO
 
 =head1 DEPENDENCIES
 
-L<Readonly(3pm)>.
+L<Readonly>.
 
 =head1 SEE ALSO
 
