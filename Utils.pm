@@ -65,15 +65,15 @@ TODO
 
 =over 8
 
-=item B<decode()>
+=item C<decode()>
 
 TODO
 
-=item B<encode()>
+=item C<encode()>
 
 TODO
 
-=item B<entity_encode()>
+=item C<entity_encode()>
 
 TODO
 
