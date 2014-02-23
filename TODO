@@ -5,7 +5,10 @@ TODO
 2. Dodelat dokumentaci.
 4. SIGNATURE
 6. Pridat entity_decode?
-7.
+7. Je spravne encode() a decode() z hlediska terminologie? encode by melo
+   uzivatelske data zakodovat do PYX, ne?
+   Projit i entity_encode.
+8.
 
 Applied
 =======
