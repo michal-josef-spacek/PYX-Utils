@@ -1,0 +1,40 @@
+NAME
+    PYX::Utils - TODO
+
+SYNOPSIS
+    TODO
+
+DESCRIPTION
+    TODO
+
+SUBROUTINES
+    "decode()"
+            TODO
+
+    "encode()"
+            TODO
+
+    "entity_encode()"
+            TODO
+
+ERRORS
+     None.
+
+EXAMPLE
+    TODO
+
+DEPENDENCIES
+    Readonly.
+
+SEE ALSO
+     TODO
+
+AUTHOR
+    Michal Špaček skim@cpan.org
+
+LICENSE AND COPYRIGHT
+    BSD license.
+
+VERSION
+    0.01
+
