@@ -1,33 +1,71 @@
 NAME
-    PYX::Utils - TODO
+    PYX::Utils - A perl module for PYX common utilities.
 
 SYNOPSIS
-    TODO
-
-DESCRIPTION
-    TODO
+     my $decoded_text = decode($text);
+     my $encoded_text = encode($text);
+     my $encoded_text = entity_encode($text);
 
 SUBROUTINES
-    "decode()"
+    "decode($text)"
+             Decode characters.
+             Currently decode newline to '\n'.
+             Returns decoded text.
+
+    "encode($text)"
+             Encode characters.
+             Currently encode '\n' to newline.
+             Returns encoded text.
+
+    "entity_encode($text)"
             TODO
 
-    "encode()"
-            TODO
+EXAMPLE1
+     # Pragmas.
+     use strict;
+     use warnings;
 
-    "entity_encode()"
-            TODO
+     # Modules.
+     use PYX::Utils qw(decode);
 
-ERRORS
-     None.
+     # TODO
 
-EXAMPLE
-    TODO
+     # Output:
+     # TODO
+
+EXAMPLE2
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use PYX::Utils qw(encode);
+
+     # TODO
+
+     # Output:
+     # TODO
+
+EXAMPLE3
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use PYX::Utils qw(entity_encode);
+
+     # TODO
+
+     # Output:
+     # TODO
 
 DEPENDENCIES
-    Readonly.
+    Exporter, Readonly.
 
 SEE ALSO
-     TODO
+    App::SGML2PYX, PYX::Checker, PYX::Filter, PYX::GraphViz,
+    PYX::Optimalization, PYX, PYX::Parser, PYX::Sort, PYX::Stack,
+    PYX::Write::Raw, PYX::Write::Tags, PYX::Write::Tags::Code, PYX::XMLNorm.
 
 AUTHOR
     Michal Špaček skim@cpan.org

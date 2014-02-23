@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 # Modules.
-use PYX::Utils qw(decode);
+use PYX::Utils qw(entity_encode);
 
 # TODO
 

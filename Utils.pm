@@ -51,49 +51,98 @@ __END__
 
 =head1 NAME
 
-PYX::Utils - TODO
+PYX::Utils - A perl module for PYX common utilities.
 
 =head1 SYNOPSIS
 
-TODO
-
-=head1 DESCRIPTION
-
-TODO
-
+ my $decoded_text = decode($text);
+ my $encoded_text = encode($text);
+ my $encoded_text = entity_encode($text);
+ 
 =head1 SUBROUTINES
 
 =over 8
 
-=item C<decode()>
+=item C<decode($text)>
 
-TODO
+ Decode characters.
+ Currently decode newline to '\n'.
+ Returns decoded text.
 
-=item C<encode()>
+=item C<encode($text)>
 
-TODO
+ Encode characters.
+ Currently encode '\n' to newline.
+ Returns encoded text.
 
-=item C<entity_encode()>
+=item C<entity_encode($text)>
 
 TODO
 
 =back
 
-=head1 ERRORS
+=head1 EXAMPLE1
 
- None.
+ # Pragmas.
+ use strict;
+ use warnings;
 
-=head1 EXAMPLE
+ # Modules.
+ use PYX::Utils qw(decode);
 
-TODO
+ # TODO
+
+ # Output:
+ # TODO
+
+=head1 EXAMPLE2
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use PYX::Utils qw(encode);
+
+ # TODO
+
+ # Output:
+ # TODO
+
+=head1 EXAMPLE3
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use PYX::Utils qw(entity_encode);
+
+ # TODO
+
+ # Output:
+ # TODO
 
 =head1 DEPENDENCIES
 
+L<Exporter>,
 L<Readonly>.
 
 =head1 SEE ALSO
 
- TODO
+L<App::SGML2PYX>,
+L<PYX::Checker>,
+L<PYX::Filter>,
+L<PYX::GraphViz>,
+L<PYX::Optimalization>,
+L<PYX>,
+L<PYX::Parser>,
+L<PYX::Sort>,
+L<PYX::Stack>,
+L<PYX::Write::Raw>,
+L<PYX::Write::Tags>,
+L<PYX::Write::Tags::Code>,
+L<PYX::XMLNorm>.
 
 =head1 AUTHOR
 
