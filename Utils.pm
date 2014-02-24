@@ -6,10 +6,11 @@ use strict;
 use warnings;
 
 # Modules.
+use HTML::Entities qw(decode_entities);
 use Readonly;
 
 # Constants.
-Readonly::Array our @EXPORT_OK => qw(decode encode entity_encode);
+Readonly::Array our @EXPORT_OK => qw(decode encode entity_decode entity_encode);
 Readonly::Hash our %ENTITIES => (
         '<' => '&lt;',
         q{&} => '&amp;',
@@ -34,7 +35,13 @@ sub encode {
 	return $text;
 }
 
-# Encode some chars for html.
+# Decode entities.
+sub entity_decode {
+	my $text = shift;
+	return decode_entities($text);
+}
+
+# Encode some chars for HTML/XML/SGML.
 sub entity_encode {
 	my $text = shift;
 	$text =~ s/([$ENTITIES])/$ENTITIES{$1}/gms;
@@ -57,6 +64,7 @@ PYX::Utils - A perl module for PYX common utilities.
 
  my $decoded_text = decode($text);
  my $encoded_text = encode($text);
+ my $decoded_text = entity_decode($text);
  my $encoded_text = entity_encode($text);
 
 =head1 SUBROUTINES
@@ -74,6 +82,14 @@ PYX::Utils - A perl module for PYX common utilities.
  Encode characters.
  Currently encode '\n' to newline.
  Returns encoded text.
+
+=item C<entity_decode($text)>
+
+ Decode entities.
+ - '&lt;' => '<'
+ - '&amp;' => '&'
+ - '&quot;' => '"'
+ Returns decoded text.
 
 =item C<entity_encode($text)>
 
@@ -141,16 +157,49 @@ PYX::Utils - A perl module for PYX common utilities.
  use warnings;
 
  # Modules.
- use PYX::Utils qw(entity_encode);
+ use PYX::Utils qw(entity_decode);
 
- # TODO
+ # Text.
+ my $text = 'foo&lt;&amp;&quot;bar';
+
+ # Decode entities.
+ my $decoded_text = entity_decode($text);
+
+ # Print to output.
+ print "Text: $text\n";
+ print "Decoded entities: $decoded_text\n";
 
  # Output:
- # TODO
+ # Text: foo&lt;&amp;&quot;bar
+ # Decoded entities: foo<&"bar
+
+=head1 EXAMPLE4
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use PYX::Utils qw(entity_encode);
+
+ # Text.
+ my $text = 'foo<&"bar';
+
+ # Encode entities.
+ my $encoded_text = entity_encode($text);
+
+ # Print to output.
+ print "Text: $text\n";
+ print "Encoded text: $encoded_text\n";
+
+ # Output:
+ # Text: foo<&"bar
+ # Encoded text: foo&lt;&amp;&quot;bar
 
 =head1 DEPENDENCIES
 
 L<Exporter>,
+L<HTML::Entities>,
 L<Readonly>.
 
 =head1 SEE ALSO

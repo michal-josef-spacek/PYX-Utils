@@ -2,6 +2,7 @@ Changes
 examples/ex1.pl
 examples/ex2.pl
 examples/ex3.pl
+examples/ex4.pl
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -22,5 +23,6 @@ t/PYX-Utils/02-pod_coverage.t
 t/PYX-Utils/03-pod.t
 t/PYX-Utils/04-encode.t
 t/PYX-Utils/05-decode.t
-t/PYX-Utils/06-entity_encode.t
+t/PYX-Utils/06-entity_decode.t
+t/PYX-Utils/07-entity_encode.t
 Utils.pm

@@ -5,9 +5,18 @@ use strict;
 use warnings;
 
 # Modules.
-use PYX::Utils qw(entity_encode);
+use PYX::Utils qw(entity_decode);
 
-# TODO
+# Text.
+my $text = 'foo&lt;&amp;&quot;bar';
+
+# Decode entities.
+my $decoded_text = entity_decode($text);
+
+# Print to output.
+print "Text: $text\n";
+print "Decoded entities: $decoded_text\n";
 
 # Output:
-# TODO
+# Text: foo&lt;&amp;&quot;bar
+# Decoded entities: foo<&"bar

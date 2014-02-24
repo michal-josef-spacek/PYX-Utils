@@ -4,6 +4,7 @@ NAME
 SYNOPSIS
      my $decoded_text = decode($text);
      my $encoded_text = encode($text);
+     my $decoded_text = entity_decode($text);
      my $encoded_text = entity_encode($text);
 
 SUBROUTINES
@@ -16,6 +17,13 @@ SUBROUTINES
              Encode characters.
              Currently encode '\n' to newline.
              Returns encoded text.
+
+    "entity_decode($text)"
+             Decode entities.
+             - '&lt;' => '<'
+             - '&amp;' => '&'
+             - '&quot;' => '"'
+             Returns decoded text.
 
     "entity_encode($text)"
              Encode some chars for HTML/XML/SGML.
@@ -77,15 +85,46 @@ EXAMPLE3
      use warnings;
 
      # Modules.
-     use PYX::Utils qw(entity_encode);
+     use PYX::Utils qw(entity_decode);
 
-     # TODO
+     # Text.
+     my $text = 'foo&lt;&amp;&quot;bar';
+
+     # Decode entities.
+     my $decoded_text = entity_decode($text);
+
+     # Print to output.
+     print "Text: $text\n";
+     print "Decoded entities: $decoded_text\n";
 
      # Output:
-     # TODO
+     # Text: foo&lt;&amp;&quot;bar
+     # Decoded entities: foo<&"bar
+
+EXAMPLE4
+     # Pragmas.
+     use strict;
+     use warnings;
+
+     # Modules.
+     use PYX::Utils qw(entity_encode);
+
+     # Text.
+     my $text = 'foo<&"bar';
+
+     # Encode entities.
+     my $encoded_text = entity_encode($text);
+
+     # Print to output.
+     print "Text: $text\n";
+     print "Encoded text: $encoded_text\n";
+
+     # Output:
+     # Text: foo<&"bar
+     # Encoded text: foo&lt;&amp;&quot;bar
 
 DEPENDENCIES
-    Exporter, Readonly.
+    Exporter, HTML::Entities, Readonly.
 
 SEE ALSO
     App::SGML2PYX, PYX::Checker, PYX::Filter, PYX::GraphViz,
