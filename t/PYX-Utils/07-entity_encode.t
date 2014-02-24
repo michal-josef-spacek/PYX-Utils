@@ -9,20 +9,20 @@ use Test::NoWarnings;
 
 # Test.
 my $str = 'a<b';
-my $out_str = entity_encode($str);
-is($out_str, "a&lt;b");
+my $ret = entity_encode($str);
+is($ret, 'a&lt;b');
 
 # Test.
 $str = 'a&b';
-$out_str = entity_encode($str);
-is($out_str, "a&amp;b");
+$ret = entity_encode($str);
+is($ret, 'a&amp;b');
 
 # Test.
 $str = 'a"b';
-$out_str = entity_encode($str);
-is($out_str, "a&quot;b");
+$ret = entity_encode($str);
+is($ret, 'a&quot;b');
 
 # Test.
 $str = '<&"';
-$out_str = entity_encode($str);
-is($out_str, "&lt;&amp;&quot;");
+$ret = entity_encode($str);
+is($ret, '&lt;&amp;&quot;');

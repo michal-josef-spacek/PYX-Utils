@@ -9,5 +9,5 @@ use Test::NoWarnings;
 
 # Test.
 my $str = "a\nb";
-my $out_str = decode($str);
-is($out_str, 'a\nb');
+my $ret = decode($str);
+is($ret, 'a\nb');
