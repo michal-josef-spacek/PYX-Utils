@@ -9,7 +9,9 @@ TODO
 8. Nahradit HTML::Entitities::decode_entities() necim jinym. Bud
    _decode_entities(), kde budou vyjmenovany me. Pripadne odstranit tuto
    zavislost.
-9.
+9. Pridat dalsi entities do testu?
+   Mam pocit, ze zrovna &nbsp; neprochazi.
+10.
 
 Applied
 =======
