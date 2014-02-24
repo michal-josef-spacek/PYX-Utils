@@ -58,7 +58,7 @@ PYX::Utils - A perl module for PYX common utilities.
  my $decoded_text = decode($text);
  my $encoded_text = encode($text);
  my $encoded_text = entity_encode($text);
- 
+
 =head1 SUBROUTINES
 
 =over 8
