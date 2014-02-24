@@ -95,10 +95,20 @@ PYX::Utils - A perl module for PYX common utilities.
  # Modules.
  use PYX::Utils qw(decode);
 
- # TODO
+ # Text.
+ my $text = "foo\nbar";
+
+ # Decode.
+ my $decoded_text = decode($text);
+
+ # Print to output.
+ print "Text: $text\n";
+ print "Decoded text: $decoded_text\n";
 
  # Output:
- # TODO
+ # Text: foo
+ # bar
+ # Decoded text: foo\nbar
 
 =head1 EXAMPLE2
 
@@ -109,10 +119,20 @@ PYX::Utils - A perl module for PYX common utilities.
  # Modules.
  use PYX::Utils qw(encode);
 
- # TODO
+ # Text.
+ my $text = 'foo\nbar';
+
+ # Encode text.
+ my $encoded_text = encode($text);
+
+ # Print to output.
+ print "Text: $text\n";
+ print "Encoded text: $encoded_text\n";
 
  # Output:
- # TODO
+ # Text: foo\nbar
+ # Encoded text: foo
+ # bar
 
 =head1 EXAMPLE3
 

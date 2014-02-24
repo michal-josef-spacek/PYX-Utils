@@ -7,7 +7,17 @@ use warnings;
 # Modules.
 use PYX::Utils qw(decode);
 
-# TODO
+# Text.
+my $text = "foo\nbar";
+
+# Decode.
+my $decoded_text = decode($text);
+
+# Print to output.
+print "Text: $text\n";
+print "Decoded text: $decoded_text\n";
 
 # Output:
-# TODO
+# Text: foo
+# bar
+# Decoded text: foo\nbar

@@ -7,7 +7,17 @@ use warnings;
 # Modules.
 use PYX::Utils qw(encode);
 
-# TODO
+# Text.
+my $text = 'foo\nbar';
+
+# Encode text.
+my $encoded_text = encode($text);
+
+# Print to output.
+print "Text: $text\n";
+print "Encoded text: $encoded_text\n";
 
 # Output:
-# TODO
+# Text: foo\nbar
+# Encoded text: foo
+# bar
