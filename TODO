@@ -8,7 +8,10 @@ TODO
 7. Je spravne encode() a decode() z hlediska terminologie? encode by melo
    uzivatelske data zakodovat do PYX, ne?
    Projit i entity_encode.
-8.
+8. Nahradit HTML::Entitities::decode_entities() necim jinym. Bud
+   _decode_entities(), kde budou vyjmenovany me. Pripadne odstranit tuto
+   zavislost.
+9.
 
 Applied
 =======
