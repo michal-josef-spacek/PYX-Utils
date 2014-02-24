@@ -18,7 +18,12 @@ SUBROUTINES
              Returns encoded text.
 
     "entity_encode($text)"
-            TODO
+             Encode some chars for HTML/XML/SGML.
+             Currenctly encode these characters:
+             - '<' => '&lt;'
+             - '&' => '&amp;'
+             - '"' => '&quot;'
+             Returns encoded text.
 
 EXAMPLE1
      # Pragmas.

@@ -77,7 +77,12 @@ PYX::Utils - A perl module for PYX common utilities.
 
 =item C<entity_encode($text)>
 
-TODO
+ Encode some chars for HTML/XML/SGML.
+ Currenctly encode these characters:
+ - '<' => '&lt;'
+ - '&' => '&amp;'
+ - '"' => '&quot;'
+ Returns encoded text.
 
 =back
 
