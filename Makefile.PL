@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'A perl module for PYX common utilities';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'PYX-Utils';
 readme_from 'Utils.pm';
