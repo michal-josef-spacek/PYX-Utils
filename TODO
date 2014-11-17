@@ -2,7 +2,6 @@ TODO
 ====
 1. Tohle by mela byt nejaka obecna knihovna. Pouzitelna i pro SGML::ESIS 
    i pro Tags::PYX a PYX/.
-4. SIGNATURE
 7. Je spravne encode() a decode() z hlediska terminologie? encode by melo
    uzivatelske data zakodovat do PYX, ne?
    Projit i entity_encode.
@@ -27,3 +26,6 @@ OK [20140224] skim
 
 2. Dodelat dokumentaci.
 OK [20140224] skim
+
+4. SIGNATURE
+OK [20141117] skim
