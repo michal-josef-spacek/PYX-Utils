@@ -27,6 +27,7 @@ no_index:
     - t
 requires:
   Exporter: 0
+  HTML::Entities: 0
   Readonly: 0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=PYX-Utils
