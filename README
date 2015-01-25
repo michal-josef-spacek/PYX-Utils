@@ -127,9 +127,7 @@ DEPENDENCIES
     Exporter, HTML::Entities, Readonly.
 
 SEE ALSO
-    App::SGML2PYX, PYX::Checker, PYX::Filter, PYX::GraphViz,
-    PYX::Optimalization, PYX, PYX::Parser, PYX::Sort, PYX::Stack,
-    PYX::Write::Raw, PYX::Write::Tags, PYX::Write::Tags::Code, PYX::XMLNorm.
+    PYX::GraphViz, PYX, PYX::Hist, PYX::Parser, PYX::Stack, Task::PYX.
 
 AUTHOR
     Michal Špaček skim@cpan.org
