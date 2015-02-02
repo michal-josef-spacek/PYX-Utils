@@ -19,7 +19,7 @@ Readonly::Hash our %ENTITIES => (
 Readonly::Scalar our $ENTITIES => join q{}, keys %ENTITIES;
 
 # Version.
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 # Decode chars.
 sub decode {
@@ -226,6 +226,6 @@ Michal Špaček L<skim@cpan.org>
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
