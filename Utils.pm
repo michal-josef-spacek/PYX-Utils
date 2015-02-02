@@ -204,8 +204,8 @@ L<Readonly>.
 
 =head1 SEE ALSO
 
-L<PYX::GraphViz>,
 L<PYX>,
+L<PYX::GraphViz>,
 L<PYX::Hist>,
 L<PYX::Parser>,
 L<PYX::Stack>,
