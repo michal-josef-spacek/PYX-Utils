@@ -1,4 +1,5 @@
 0.03
+ - Add REPOSITORY section to doc.
  - Add minimal version of Perl.
  - Fix SEE ALSO section to reality.
  - Update LICENSE AND COPYRIGHT section in doc to reality.

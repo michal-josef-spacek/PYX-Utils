@@ -211,6 +211,10 @@ L<PYX::Parser>,
 L<PYX::Stack>,
 L<Task::PYX>.
 
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/PYX-Utils>
+
 =head1 AUTHOR
 
 Michal Špaček L<skim@cpan.org>
