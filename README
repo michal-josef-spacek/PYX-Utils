@@ -127,7 +127,8 @@ DEPENDENCIES
     Exporter, HTML::Entities, Readonly.
 
 SEE ALSO
-    PYX, PYX::GraphViz, PYX::Hist, PYX::Parser, PYX::Stack, Task::PYX.
+    Task::PYX
+        Install the PYX modules.
 
 REPOSITORY
     <https://github.com/tupinek/PYX-Utils>
