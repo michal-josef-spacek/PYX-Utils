@@ -222,7 +222,7 @@ Michal Špaček L<skim@cpan.org>
 
 =head1 LICENSE AND COPYRIGHT
 
- © 2005-2016 Michal Špaček
+ © 2005-2020 Michal Špaček
  BSD 2-Clause License
 
 =head1 VERSION
