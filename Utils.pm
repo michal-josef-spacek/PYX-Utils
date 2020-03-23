@@ -1,11 +1,9 @@
 package PYX::Utils;
 
-# Pragmas.
 use base qw(Exporter);
 use strict;
 use warnings;
 
-# Modules.
 use HTML::Entities qw(decode_entities);
 use Readonly;
 
@@ -18,7 +16,6 @@ Readonly::Hash our %ENTITIES => (
 );
 Readonly::Scalar our $ENTITIES => join q{}, keys %ENTITIES;
 
-# Version.
 our $VERSION = 0.05;
 
 # Decode chars.
@@ -104,11 +101,9 @@ PYX::Utils - A perl module for PYX common utilities.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use PYX::Utils qw(decode);
 
  # Text.
@@ -128,11 +123,9 @@ PYX::Utils - A perl module for PYX common utilities.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use PYX::Utils qw(encode);
 
  # Text.
@@ -152,11 +145,9 @@ PYX::Utils - A perl module for PYX common utilities.
 
 =head1 EXAMPLE3
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use PYX::Utils qw(entity_decode);
 
  # Text.
@@ -175,11 +166,9 @@ PYX::Utils - A perl module for PYX common utilities.
 
 =head1 EXAMPLE4
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use PYX::Utils qw(entity_encode);
 
  # Text.

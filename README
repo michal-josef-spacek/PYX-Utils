@@ -34,11 +34,9 @@ SUBROUTINES
              Returns encoded text.
 
 EXAMPLE1
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use PYX::Utils qw(decode);
 
      # Text.
@@ -57,11 +55,9 @@ EXAMPLE1
      # Decoded text: foo\nbar
 
 EXAMPLE2
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use PYX::Utils qw(encode);
 
      # Text.
@@ -80,11 +76,9 @@ EXAMPLE2
      # bar
 
 EXAMPLE3
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use PYX::Utils qw(entity_decode);
 
      # Text.
@@ -102,11 +96,9 @@ EXAMPLE3
      # Decoded entities: foo<&"bar
 
 EXAMPLE4
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use PYX::Utils qw(entity_encode);
 
      # Text.
