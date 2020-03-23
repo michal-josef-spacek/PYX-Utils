@@ -16,7 +16,7 @@ Readonly::Hash our %ENTITIES => (
 );
 Readonly::Scalar our $ENTITIES => join q{}, keys %ENTITIES;
 
-our $VERSION = 0.05;
+our $VERSION = 0.06;
 
 # Decode chars.
 sub decode {
@@ -219,6 +219,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.05
+0.06
 
 =cut
