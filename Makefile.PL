@@ -23,8 +23,8 @@ requires 'Readonly' => 0;
 requires 'perl' => '5.8.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=PYX-Utils';
-resources 'homepage' => 'https://github.com/tupinek/PYX-Utils';
-resources 'repository' => 'git://github.com/tupinek/PYX-Utils';
+resources 'homepage' => 'https://github.com/michal-josef-spacek/PYX-Utils';
+resources 'repository' => 'git://github.com/michal-josef-spacek/PYX-Utils';
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
 tests_recursive;

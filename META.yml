@@ -29,7 +29,7 @@ requires:
   perl: 5.8.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=PYX-Utils
-  homepage: https://github.com/tupinek/PYX-Utils
+  homepage: https://github.com/michal-josef-spacek/PYX-Utils
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/PYX-Utils
+  repository: git://github.com/michal-josef-spacek/PYX-Utils
 version: '0.06'
