@@ -218,11 +218,11 @@ L<https://github.com/tupinek/PYX-Utils>
 
 =head1 AUTHOR
 
-Michal Špaček L<skim@cpan.org>
+Michal Josef Špaček L<skim@cpan.org>
 
 =head1 LICENSE AND COPYRIGHT
 
- © 2005-2020 Michal Špaček
+ © 2005-2020 Michal Josef Špaček
  BSD 2-Clause License
 
 =head1 VERSION

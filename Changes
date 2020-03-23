@@ -1,6 +1,7 @@
 0.05
  - Update copyright years.
  - Update Module::Install to 1.19 version.
+ - Update author name.
 
 0.04 2015-09-27T22:58:39+02:00
  - Improve SEE ALSO section in doc.
