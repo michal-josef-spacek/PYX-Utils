@@ -68,38 +68,48 @@ PYX::Utils - A perl module for PYX common utilities.
 
 =head1 SUBROUTINES
 
-=over 8
+=head2 C<decode>
 
-=item C<decode($text)>
+ my $decoded_text = decode($text);
 
- Decode characters.
- Currently decode newline to '\n'.
- Returns decoded text.
+Decode characters.
+Currently decode newline to '\n'.
 
-=item C<encode($text)>
+Returns decoded text.
 
- Encode characters.
- Currently encode '\n' to newline.
- Returns encoded text.
+=head2 C<encode>
 
-=item C<entity_decode($text)>
+ my $encoded_text = encode($text);
 
- Decode entities.
- - '&lt;' => '<'
- - '&amp;' => '&'
- - '&quot;' => '"'
- Returns decoded text.
+Encode characters.
+Currently encode '\n' to newline.
 
-=item C<entity_encode($text)>
+Returns encoded text.
 
- Encode some chars for HTML/XML/SGML.
- Currenctly encode these characters:
- - '<' => '&lt;'
- - '&' => '&amp;'
- - '"' => '&quot;'
- Returns encoded text.
+=head2 C<entity_decode>
 
-=back
+ my $decoded_text = entity_decode($text);
+
+Decode entities.
+
+ '&lt;' => '<'
+ '&amp;' => '&'
+ '&quot;' => '"'
+
+Returns decoded text.
+
+=head2 C<entity_encode>
+
+ my $encoded_text = entity_encode($text);
+
+Encode some chars for HTML/XML/SGML.
+Currenctly encode these characters:
+
+ '<' => '&lt;'
+ '&' => '&amp;'
+ '"' => '&quot;'
+
+Returns encoded text.
 
 =head1 EXAMPLE1
 
